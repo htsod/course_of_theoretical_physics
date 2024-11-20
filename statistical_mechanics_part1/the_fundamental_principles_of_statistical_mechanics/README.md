@@ -4,7 +4,7 @@ The presentation of the concepts in this introductory chapter is both fascinatin
 
 ## Statisticla Distribution
 
-1. Difference between mechanics and statistical mechanics
+1. _Difference between mechanics and statistical mechanics_
 
 The many-body particles problem follows the simple mechanical rules but due to the large degree of freedom makes the problem intractable.
 
@@ -12,7 +12,7 @@ As the complexity and intricacy of the interaction increases, a new statistical 
 
 __These statistical laws resulting from the very presence of a large number of particles forming the body cannot in any way be reduced to purely mechanical laws.__
 
-2. Phase space and phase trajectory to describe the subsystem
+2. _Phase space and phase trajectory to describe the subsystem_
 
 __Phase space__ describe the states of the $i$th particles having momentun $p_{i}$ and position $q_{i}$. For a system that has $s$ particles, it will correspond to $6s$ degree of freedom $(q_{1}, q_{2},...,q_{s}, p_{1}, p_{2},...,p_{s})$.
 
@@ -25,7 +25,7 @@ $$ dw = \rho (q_{1},q_{2},...,q_{s},p_{1},p_{2},...,p_{s}) dp dq$$
 where $dpdq = dq_{1}dq_{2}...dq_{s}dp_{1}dp_{2}...dp_{s}$. $dw$ tells us the probability of the subsystem being in the infinitesimal phase volume $dpdq$ and $\rho$ is the weighting of of the phase space, or in other words the probability density distribution in the phase space.
 
 
-3. Time average and ensemble average of the macroscopic quantities are the same
+3. _Time average and ensemble average of the macroscopic quantities are the same_
 
 Any average of the observable $f(p,q)$ can be obtained by integrating over the phase space with the probability density distribution as follow:
 
@@ -41,15 +41,60 @@ Then determining the probability distribution function $\rho$ is of special impo
 
 
 
-4. Equilibrium and relaxation time
+4. _Equilibrium and relaxation time_
 
 Here we are considering the time taken to equilibrate the system $T$ is long enough for the system to reach __equilibrium__. Quoting from the book:
 
 __If a closed microscopic system is in a state such that in any macroscopic subsystem the macroscopic physical quantities are to a high degree of accuracy equal to their mean values, the system is said to be in a state of _statistical equilibrium_.__
 
- In study of statistical mechanics, we limit our scope to equilibrium system, any thing that concern with the equilibration of the system, is in the study of _kinetics_. Any closed system this is yet to approach equilibrium will eventually equiliibrium to equilibrium state. The time taken to reach equilibrium state is known is the __relaxation time__.
+For any closed system is yet to approach equilibrium will eventually reach a equilibrium state. The time taken to reach equilibrium state is known is the __relaxation time__. In the study of statistical mechanics, we limit our scope to equilibrium system, any thing that concern with the equilibration of the system, is in the study of _kinetics_.
 
 
 
-### Statistical Independence
+## Statistical Independence
+
+1. _Weakly interacting subsystem are mutually statistical independent_
+
+A subsystem which we defined to be large enough to be macroscopic has a much larger internal energy than its interacting energy. Hence, in a short enough time, the interaction between subsystem remains weak and does not contribute changes to the distribution.
+
+Consider a composite system with probability density $\rho_{12}$ that composes of two subsystems $\rho_{1}$ and $\rho_{2}$. A statistical independent between the subsystem would imply that:
+
+$$ \rho_{12}dp_{12}dq_{12} = \rho_{1}dp_{1}dq_{1}\rho_{2}dp_{2}dq_{2} $$
+
+$$ \rho_{12} = \rho_{1}\rho_{2} $$
+
+Let the macroscopic quantities in subsystems to be $f_{1}$ and $f_{2}$. Statistical independent would then suggests that the mean of the product between $f_{1}$ and $f_{2}$ will be the same as the product of the means. As shown in the following:
+
+$$ \bar{f_{1}f_{2}} = \int{\rho_{12}dp_{12}dq_{12} f_{1}f_{2}} = \int{\rho_{1}dp_{1}dq_{2}f_{1}} \int{\rho_{2}dp_{2}dq_{2}f_{2}} =  \bar{f_{1}} \bar{f_{2}} $$
+
+
+2. _The relative fluctuation of the system scales as $\frac{1}{\sqrt{N}}$_
+
+The relative fluctuation of the system is defined to the ratio between the __root mean square__ fluctuation of the quantity $f$ and the mean of $f$.
+
+$$ \frac{\left< (\triangle f)^{2} \right>^{1/2}}{\bar{f}} $$
+
+where $\triangle f = f - \bar{f}$ is the difference to the mean. This ratio is strictly positive, it reduces to zero only when the difference to the mean becomes zero.
+
+To show that this ratio is inversely proportional to the size of the system, we first note that most macroscopic quantity with physical interest $f_{i}$ in the susbsystem $i$ is an additive value, meaning if we sum all the $f_{i}$ to get the macroscopic quantity for the entire system. This is due to the fact that the subsystems are _quasi-closed_.
+
+$$ \bar{f} = \sum_{i}{\bar{f_{i}}} $$
+
+$$ \left< (\triangle f)^{2} \right>^{1/2} = \left< (\triangle \sum_{i}{f_{i}})^{2} \right>^{1/2} $$
+
+<!-- 
+Rewriting the square of the range of the fluctuation $(\triangle f)^{2} = \bar{f}^{2} + f^{2} -2 f \bar{f} = \bar{f}^{2} + f^{2}$, where in the second equality the last term vanishes because $f$ fluctuates in all directions.  -->
+
+Making use of the fact that the subsystem is weakly interacting, leading us with $ \triangle f_{i} \triangle f_{j} = \delta_{ij} (\triangle f_{i})^{2}$.
+
+Then, we could express the relative fluctuation with the summation outside the average:
+
+$$ \frac{\left<(\triange f)^{2}\right>^{1/2}}{\bar{f}} = \frac{\left<(\sum_{i}{\triange f_{i}})^{2}\right>^{1/2}}{\sum_{i}{\bar{f_{i}}}} =  \frac{\sum_{i}{\left< (\triangle f_{i})^{2} \right>^{1/2}}}{\sum_{i}{\bar{f_{i}}}} \propto \frac{1}{\sqrt{N}} $$
+
+That suggests that the deviation from the mean descreases with the size of the system increases. For typical molecular system with $N \approx 10^{23}$, the deviation is vanishingly small.
+
+
+
+## Liouville's Theorem
+
 
