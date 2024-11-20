@@ -85,11 +85,11 @@ $$ \left< (\triangle f)^{2} \right>^{1/2} = \left< (\triangle \sum_{i}{f_{i}})^{
 <!-- 
 Rewriting the square of the range of the fluctuation $(\triangle f)^{2} = \bar{f}^{2} + f^{2} -2 f \bar{f} = \bar{f}^{2} + f^{2}$, where in the second equality the last term vanishes because $f$ fluctuates in all directions.  -->
 
-Making use of the fact that the subsystem is weakly interacting, leading us with $ \triangle f_{i} \triangle f_{j} = \delta_{ij} (\triangle f_{i})^{2}$.
+Making use of the fact that the subsystem is weakly interacting, leading us with $\triangle f_{i} \triangle f_{j} = \delta_{ij} (\triangle f_{i})^{2}$.
 
 Then, we could express the relative fluctuation with the summation outside the average:
 
-$$ \frac{\left<(\triange f)^{2}\right>^{1/2}}{\bar{f}} = \frac{\left<(\sum_{i}{\triange f_{i}})^{2}\right>^{1/2}}{\sum_{i}{\bar{f_{i}}}} =  \frac{\sum_{i}{\left< (\triangle f_{i})^{2} \right>^{1/2}}}{\sum_{i}{\bar{f_{i}}}} \propto \frac{1}{\sqrt{N}} $$
+$$ \frac{\left< (\triangle f)^{2} \right>^{1/2}}{\bar{f}} = \frac{\left<(\sum_{i}{ \triangle f_{i}})^{2}\right>^{1/2}}{\sum_{i}{\bar{f_{i}}}} =  \frac{\sum_{i}{\left< (\triangle f_{i})^{2} \right>^{1/2}}}{\sum_{i}{\bar{f_{i}}}} \propto \frac{1}{\sqrt{N}} $$
 
 That suggests that the deviation from the mean descreases with the size of the system increases. For typical molecular system with $N \approx 10^{23}$, the deviation is vanishingly small.
 
