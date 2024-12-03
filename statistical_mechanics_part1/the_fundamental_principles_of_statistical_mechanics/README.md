@@ -10,19 +10,19 @@ The many-body particles problem follows the simple mechanical rules but due to t
 
 As the complexity and intricacy of the interaction increases, a new statistical regularity appear.
 
-__These statistical laws resulting from the very presence of a large number of particles forming the body cannot in any way be reduced to purely mechanical laws.__
+__These statistical laws resulting from the very presence of a large number of particles forming the body cannot in any way be reduced to purely mechanical laws, which draws the difference between mechanics and statsitical mechanics__
 
 2. _Phase space and phase trajectory to describe the subsystem_
 
-__Phase space__ describe the states of the $i$th particles having momentun $p_{i}$ and position $q_{i}$. For a system that has $s$ particles, it will correspond to $6s$ degree of freedom $(q_{1}, q_{2},...,q_{s}, p_{1}, p_{2},...,p_{s})$.
+__Phase space__ describe the states of the $i$ th particles having momentun $p_{i}$ and position $q_{i}$. For a system that has $s$ particles, it will correspond to $6s$ degree of freedom $(q_{1}, q_{2},...,q_{s}, p_{1}, p_{2},...,p_{s})$.
 
 We consider a subsytem that is still large enough to be a macroscopic part of the system. At sufficiently long time $T$, the subsystem would have explore every possible states many times. At a time interval $\triangle t << T$, the subsystem will occupy the phase space $\triangle q \triangle p$. At the limit $T\rightarrow \infty$, $w= lim_{T\rightarrow \infty}{\frac{\triangle t}{T}}$, is a constant value. 
 
-This approach connects the time dependent macroscopic quantities and the phase space weighting or the ensemble average (averaging over the phase space volume for the subsystem), leading to a time-independent and probablistic picture of the system, where the initial condition no longer matters for any macroscopic quantities of the system. We could write the probability of the state of the subsystem as:
+This approach connects the time dependent macroscopic quantities and the phase space weighting or the ensemble average (averaging over the phase space volume for the subsystem), leading to a time-independent and probablistic description of the subsystem, where the initial condition no longer matters for any macroscopic quantities of the system. We could write the probability of the state of the subsystem as:
 
 $$ dw = \rho (q_{1},q_{2},...,q_{s},p_{1},p_{2},...,p_{s}) dp dq$$
 
-where $dpdq = dq_{1}dq_{2}...dq_{s}dp_{1}dp_{2}...dp_{s}$. $dw$ tells us the probability of the subsystem being in the infinitesimal phase volume $dpdq$ and $\rho$ is the weighting of of the phase space, or in other words the probability density distribution in the phase space.
+where $dpdq = dq_{1}dq_{2}...dq_{s}dp_{1}dp_{2}...dp_{s}$. $dw$ tells us the probability of the subsystem being in the infinitesimal phase volume $dpdq$ and $\rho$ is the weighting of the phase space, also known as the probability density distribution in the phase space.
 
 
 3. _Time average and ensemble average of the macroscopic quantities are the same_
@@ -31,11 +31,11 @@ Any average of the observable $f(p,q)$ can be obtained by integrating over the p
 
 $$ \bar{f} = \int{\rho f(p, q) dp dq}$$
 
-By this formalism, the time average and the ensemble average of the observable $f$ equal and could be expressed as the following equality:
+By this formalism, the time average and the ensemble average of the observable $f$ equal:
 
 $$ \bar{f} = \frac{1}{T} \int{f(t)dt} = \int{\rho f(p, q) dpdq} $$
 
-This is saying that the ensemble average of the value is invariant for a system. And all the macroscopic quantities in the subsystem is specify by the weighted average in the phase space. Since the initial time we choose is arbitrary, the average value is independent of the initial condition.
+This is saying that the ensemble average of the value is time invariant. And all the macroscopic quantities in the subsystem is specify by the weighted average in the phase space. Since the initial time we choose is arbitrary, the average value is independent of the initial condition.
 
 Then determining the probability distribution function $\rho$ is of special important in statisitical mechanics, since it gives a time-invariant measure to equilibrium system.
 
@@ -76,16 +76,18 @@ $$ \frac{\left< (\triangle f)^{2} \right>^{1/2}}{\bar{f}} $$
 
 where $\triangle f = f - \bar{f}$ is the difference to the mean. This ratio is strictly positive, it reduces to zero only when the difference to the mean becomes zero.
 
-To show that this ratio is inversely proportional to the size of the system, we first note that most macroscopic quantity with physical interest $f_{i}$ in the susbsystem $i$ is an additive value, meaning if we sum all the $f_{i}$ to get the macroscopic quantity for the entire system. This is due to the fact that the subsystems are _quasi-closed_.
+To show that this ratio is inversely proportional to the size of the system, we first note that most macroscopic quantity $f_{i}$ in the susbsystem $i$ is an additive value, meaning if we sum all the $f_{i}$ to get the macroscopic quantity for the entire system. This is due to the fact that the subsystems are _quasi-closed_.
 
 $$ \bar{f} = \sum_{i}{\bar{f_{i}}} $$
+
+So, the nominator of the relative fluctuation could be written as:
 
 $$ \left< (\triangle f)^{2} \right>^{1/2} = \left< (\triangle \sum_{i}{f_{i}})^{2} \right>^{1/2} $$
 
 <!-- 
 Rewriting the square of the range of the fluctuation $(\triangle f)^{2} = \bar{f}^{2} + f^{2} -2 f \bar{f} = \bar{f}^{2} + f^{2}$, where in the second equality the last term vanishes because $f$ fluctuates in all directions.  -->
 
-Making use of the fact that the subsystem is weakly interacting, leading us with $\triangle f_{i} \triangle f_{j} = \delta_{ij} (\triangle f_{i})^{2}$.
+Making use of the fact that the subsystem is weakly interacting, leading us with $\triangle f_{i} \triangle f_{j} = \delta_{ij} (\triangle f_{i})^{2}$, where $\delta_{ij}$ is the dirac delta.
 
 Then, we could express the relative fluctuation with the summation outside the average:
 
