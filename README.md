@@ -24,7 +24,7 @@ Study notes on the book series of Course of Theoretical Physics.
 10. [Physical Kinetics](#physical-kinetics)
 
 
-## Mechanics
+<!-- ## Mechanics
 
 
 ## The Classical Theory of Fields
@@ -32,7 +32,7 @@ Study notes on the book series of Course of Theoretical Physics.
 
 ## Quantum Mechanics (Non-relativistic Theory)
 
-## Quantum Electrodynamics
+## Quantum Electrodynamics -->
 
 ## Statistical Mechanics Part I
 
@@ -137,10 +137,44 @@ That suggests that the deviation from the mean descreases with the size of the s
 
 #### Liouville's Theorem
 
+1. Long enough to be equilibrium not long enough to equilibrate
+
+Like mention earlier, typical system has particles number of order $~10^{23}$ which renders an impossibility of a complete mechanical description of the system. Consider decomposing the entire system into macroscopic subsystem that only weakly interacting with other consitituents. We require a time duration that long enough for the subsystem to reach equilibrium, but not too long for the interaction that takes effect to equilibrate further. In this particular framework, we can allocate each subsystem a points in the phase space. The distribution of these phase points, of course, will follow the probability distribution function of the phase space $\rho(q, p)$.
+
+
+2. Flow in the phase space
+
+A probabilty distribution will follow the continuity equation which presume locality of the subsystem, restricting the possible form of the probability distribution.
+
+$$ \frac{\partial\rho}{\partial t}  + \nabla \cdot (\rho v) = 0$$
+
+where $v$ is the velocity of the generalized coordinates $p$ and $q$.
+
+3. Invariant probability distribution
+
+Suppose for a steady flow in a system with $s$ particles, by steady flow we suggest that the probability density function has no explict dependence on time, which is a reasonable assumption to make for a equilibrium system.
+
+
+$$ \nabla \cdot (\rho v) = \sum_{i=1}^{22s}{\rho} = \sum_{i=1}^{s}{\left[ \frac{\partial}{\partial q_{i}} (\rho \dot{q_{i}}) + \frac{\partial}{ \partial p_{i}} (\rho \dot{p_{i}}) \right]} = 0 $$
+
+Expanding yields:
+
+$$ \sum_{i=1}^{s}{\left[ \dot{q_{i}} \frac{\partial \rho}{\partial q_{i}} + \dot{p_{i}}\frac{\partial \rho}{\partial p_{i}}  \right]} + \rho \sum_{i=1}^{s}{\left[ \frac{\partial \dot{q_{i}}}{\partial q_{i}} + \frac{\partial \dot{p_{i}}}{\partial p_{i}} \right]}  $$
+
+For a Hamiltonian system, $\frac{\partial H}{\partial p_{i} = \dot{q_{i}}}$ and $-\frac{\partial H}{\partial p_{i}} = \dot{p_{i}}$. Substitute these in the second summation:
+
+$$  \sum_{i=1}^{s}{\left[ \dot{q_{i}} \frac{\partial \rho}{\partial q_{i}} + \dot{p_{i}}\frac{\partial \rho}{\partial p_{i}}  \right]} = \frac{d\rho}{dt} $$
+
+That suggests the probability distribution for a Hamiltonian system is a time-invariant constant.
+
+
+#### The significant of energy
 
 
 
 
+
+<!-- 
 ## Fluid Mechanics
 
 ## Theory of Elasticity
@@ -149,5 +183,5 @@ That suggests that the deviation from the mean descreases with the size of the s
 
 ## Statistical Mechanics Part II
 
-## Physical Kinetics
+## Physical Kinetics -->
 
