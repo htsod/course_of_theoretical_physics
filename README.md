@@ -161,14 +161,68 @@ Expanding yields:
 
 $$ \sum_{i=1}^{s}{\left[ \dot{q_{i}} \frac{\partial \rho}{\partial q_{i}} + \dot{p_{i}}\frac{\partial \rho}{\partial p_{i}}  \right]} + \rho \sum_{i=1}^{s}{\left[ \frac{\partial \dot{q_{i}}}{\partial q_{i}} + \frac{\partial \dot{p_{i}}}{\partial p_{i}} \right]}  $$
 
-For a Hamiltonian system, $\frac{\partial H}{\partial p_{i} = \dot{q_{i}}}$ and $-\frac{\partial H}{\partial p_{i}} = \dot{p_{i}}$. Substitute these in the second summation:
+For a Hamiltonian system, $\frac{\partial H}{\partial p_{i}} = \dot{q_{i}}$ and $-\frac{\partial H}{\partial p_{i}} = \dot{p_{i}}$. Substitute these in the second summation:
 
 $$  \sum_{i=1}^{s}{\left[ \dot{q_{i}} \frac{\partial \rho}{\partial q_{i}} + \dot{p_{i}}\frac{\partial \rho}{\partial p_{i}}  \right]} = \frac{d\rho}{dt} $$
 
-That suggests the probability distribution for a Hamiltonian system is a time-invariant constant.
+That suggests that the flow in phase space only depends on the momentum and position, which are the time-invariant quantities. The result is only valid for not too lon intervals of time, during which the subsystem behaves as if closed, to a sufficient approximation.
 
 
-#### The significant of energy
+#### The Significant of Energy
+
+1. $\rho$ is a integral of motion
+
+
+From Liouville theorem, under qusi-closed subsystem condition, we have restricted the probability distribution function of the phase space to be only dependent on the momentum and position, which are the mechanical invariants of the subsystem. The probability distribution function then, being a function of the mechanical invariants, is itself an integral of the motion.
+
+2. The logarithm of $\rho$ is additive
+
+From the statistical independent of the susbsytems, the distribution $\rho_{12}$ for a combination of two subsystems is equal to the product of the distribution $\rho_{1}$ and $\rho_{2}$, hence:
+
+$$ \log{\rho_{12}} = \log{\rho_{1}} + \log{\rho_{2}} $$
+
+3. The values of the additive integrals of the motion completely defined the statistica properties of a closed system
+
+Since $\rho$ is both an integral of the motion and additive, that restrict the form of $\rho_{a}$ for the $a$ th subsystem to be linear combinations of the seven independent additive integrals of the motion: the energy, the three components of the momentum vector and the three components of the angular momentum vector.
+
+$$ \log{\rho_{a}} = \alpha_{a} + \beta E_{a}(p,q) + \gamma \cdot P_{a}(p,q) + \delta \cdot M_{\alpha}(p, q)$$
+
+with constant coefficients $alpha_{a}, \beta, \gamma, \delta$ which  $\beta, \gamma, \delta$ must be the same for all subsystems in a given closed system by construction and $\alpha_{a}$ is the normalization constant.
+
+Hence, the statistical properties could be completely specified by the values of the additive integral of the motion, which replace the unimaginable multiplicity of the data which would be required in the approach from mechanics.
+
+One specific form of the distribution function is $\rho = constant$ for all points in phase space which corresponds to given constant values of the energy, momentum and angular momentum and $\rho = 0$ at all other points.
+
+$$ \rho = constnat \times \delta (E-E_{0}) \delta (P-P_{0}) \delta (M-M_{0}) $$
+
+Also known as the _microcanonical ensemble_.
+
+We could further make the assumption that the subsystem follows both translational and rotational invariant. So that the points in the phase space has no preference over the value of the momentum and angular momentum.
+
+$$ \log_{\rho_{a}} = \alpha_{a} + \beta E_{a}(p, q)  $$
+
+The microcanonical distribution for the whole system is
+
+$$ \rho = constant \times \delta (E-E_{0}) $$
+
+4. Partial equilibrium within the system and its parts
+
+The above derivation is valid for the time duration long compared with the relaxation time. In some instances taking time shorter than the relaxation time is in practice needed. The above consideration would still valid under such consideration as long as the system size is large, owing to the existence of what called partial equilibria. Such equilibria occur because the relaxation time increaes with the szie of the system, and so the subsystem reaches the equilibrium state considerably more quickly than equilibrium is established between these small parts.
+
+This means the distribution function follows the form we just derived, with different values of the parameters $\beta, \gamma, \delta$ for each subsystems. In such a case the system is said to be in _partial equilibrium_. In the course of tim , the partial equilibrium gradually becomes complete, and the parameters for each subsystem slowly vary and finally become equal throughout the closed system.
+
+5. Partial equilibrium between different processes
+
+Partial equilibrium also happens when different processes have different rate of occurance and relaxation time.
+
+One example is the partial equilibrium in a mixture of several substances involved in a chemical reaction where the equilibration of the molecues will be reached faster than the equilibration of the chemical reaction.
+
+Partial equilibrium of systems lead to the concept of _macroscopic states_ of a system, which defined by the mean value of quantities describing sufficiently small but macroscopic parts of the system.
+
+
+#### The statistical matrix
+
+
 
 
 
